@@ -78,3 +78,39 @@
 // console.log(0 % 9 === 0);
 // console.log('\n'.length);
 // printChessboard(4, 4);
+
+// Create a function called accum that behaves like...look down!
+
+function accum(str) {
+  return str.split('').map((elem, index) => elem.toUpperCase() + elem.toLowerCase().repeat(index)).join('-');
+
+}
+
+console.log(accum("abcd"));    // "A-Bb-Ccc-Dddd"
+console.log(accum("RqaEzty")); // "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+console.log(accum("cwAt"));    // "C-Ww-Aaa-Tttt"
+
+
+
+// var new_array = arr.map(function callback(currentValue[, index[, array]]) {
+//   // Return element for new_array
+// }[, thisArg])
+
+// Homework
+
+// Your goal in this kata is to implement a difference function, which subtracts one list from another 
+// and returns the result.
+
+// It should remove all values from list a, which are present in list b.
+
+// array_diff([1,2],[1]) == [2]
+// If a value is present in b, all of its occurrences must be removed from the other:
+
+// array_diff([1,2,2,2,3],[2]) == [1,3]
+
+function array_diff(arr1, arr2) {
+  // your code here. compare arrays to see which numbers are in the first array and not in the 2nd
+}
+
+console.log(array_diff([1, 2], [1]));         // [2]
+console.log(array_diff([1, 2, 2, 2, 3], [2]));   // [1, 3]
