@@ -25,7 +25,16 @@
 // When you have that working, modify your program to print “FizzBuzz” for numbers that are divisible by both 3 and 5 (and still print “Fizz” or “Buzz” for numbers divisible by only one of those).
 
 // (This is actually an interview question that has been claimed to weed out a significant percentage of programmer candidates. So if you solved it, your labor market value just went up.)
+function PennyCounterFunction() {
+  for (let Penny = 0; Penny < 101; Penny++)
+    if (Penny % 3 === 0)
+      console.log("fuzz")
+    else { console.log(Penny) }
 
+  console.log(Penny)
+}
+
+PennyCounterFunction()
 
 // 3 -) Chessboard
 // Write a program that creates a string that represents an 8×8 grid, using newline characters to separate lines.At each position of the grid there is either a 
@@ -81,14 +90,14 @@
 
 // Create a function called accum that behaves like...look down!
 
-function accum(str) {
-  return str.split('').map((elem, index) => elem.toUpperCase() + elem.toLowerCase().repeat(index)).join('-');
+// function accum(str) {
+//   return str.split('').map((elem, index) => elem.toUpperCase() + elem.toLowerCase().repeat(index)).join('-');
 
-}
+// }
 
-console.log(accum("abcd"));    // "A-Bb-Ccc-Dddd"
-console.log(accum("RqaEzty")); // "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
-console.log(accum("cwAt"));    // "C-Ww-Aaa-Tttt"
+// console.log(accum("abcd"));    // "A-Bb-Ccc-Dddd"
+// console.log(accum("RqaEzty")); // "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+// console.log(accum("cwAt"));    // "C-Ww-Aaa-Tttt"
 
 
 
@@ -108,9 +117,9 @@ console.log(accum("cwAt"));    // "C-Ww-Aaa-Tttt"
 
 // array_diff([1,2,2,2,3],[2]) == [1,3]
 
-function array_diff(arr1, arr2) {
+// function array_diff(arr1, arr2) {
   // your code here. compare arrays to see which numbers are in the first array and not in the 2nd
-}
+// }
 
-console.log(array_diff([1, 2], [1]));         // [2]
-console.log(array_diff([1, 2, 2, 2, 3], [2]));   // [1, 3]
+// console.log(array_diff([1, 2], [1]));         // [2]
+// console.log(array_diff([1, 2, 2, 2, 3], [2]));   // [1, 3]
